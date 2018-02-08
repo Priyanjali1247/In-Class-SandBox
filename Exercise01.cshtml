@@ -12,35 +12,27 @@
 {
     <link href="~/Content/myStyleSheet.css" rel="stylesheet" />
     <div>
-        <h3>A Simple For</h3>
+       }
         <form id="EX01" action="" method="post">
-            <div CLASS-"ROW">
-                <label for="leftInput">Customer Name:</label>
-                <input type="text" name="leftInput" id="leftInput"
-                       value="@..." placeholder="" />
+            <div CLASS="ROW">
+                <div class="col-sm-6">
+                    <label for="leftInput">Customer Name:</label>
+                    <input type="text" name="leftInput" id="leftInput"
+                           value="" placeholder="" />
+                    </div>
+                <div class="col-sm-offset-6">
+                    <label id="leftinput">Choose your meal items</label><br />
+                    <input type="checkbox" name="leftinput" value="Steak" />Steak<br />
+                    <input type="checkbox" name="leftinput" value="Seafood" />Seafod<br />
+                    <input type="checkbox" name="leftinput" value="Vegetables" />Vegetables<br />
+                </div>
+                <button type="submit" class="btn" value="">
+                    SUBMIT
+                </button>
+                <button type="submit" class="btn" value="CustomerName">
+                    RESET
+                </button>
             </div>
-            <div>
-
-                <script src="~/Scripts/jquery-3.3.1.js"></script>
-                <link href="~/Content/bootstrap.css" rel="stylesheet" />
-                <script src="~/Scripts/bootstrap.js"></script>
-
-            </div>
-            <div>
-                <label for="leftInput">Choose your meal:</label>
-
-               </div>
-
-                    <button type="submit" class="btn" value="Submit">
-                        SUBMIT
-                    </button>
-                    <button type="submit" class="btn" value="Reset">
-                        RESET
-                    </button>
-
-                </form>
-
-            </div>
-
-
-
+        </form>
+        </div>
+  

@@ -1,26 +1,19 @@
 ﻿
-
-<!DOCTYPE html>
 <html>
 <head>
     <title>@Page.Title</title>
     <script src="~/Scripts/jquery-3.3.1.js"></script>
     <link href="~/Content/bootstrap.css" rel="stylesheet" />
     <script src="~/Scripts/bootstrap.js"></script>
-
     @RenderSection("head", required: false)
-
 </head>
 <body>
     <div class="navbar navbar-default">
         <div class="container">
             <div class="navbar-header">
-
                 <a class="navbar-brand" style="font-size:x-large"><strong>CPSC1517</strong></a>
             </div>
-
             <ul class="nav navbar-nav">
-
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         Exercises
@@ -31,11 +24,9 @@
                     </ul>
                 </li>
 
-
             </ul>
         </div>
     </div>
-
     <div class="jumbotron">
         @RenderSection("banner", required: true)
     </div>
@@ -43,8 +34,6 @@
         @RenderBody()
     </div>
     @RenderSection("footer", required: false)
-
-
 
 </body>
 </html>
